@@ -1,16 +1,16 @@
 :root {
-  /* 主题色 —— 复制新站时改成贴近游戏调性的颜色（恐怖游戏用暗红深紫、童话游戏用粉蓝暖黄）。
+  /* 主题色 —— Breathedge 2 复古未来太空：深空蓝黑底 + 霓虹青蓝高亮。
      HSL 值：色相 饱和度% 亮度%。改 --nav-theme 三行即可换主题色。 */
-  --nav-theme: 338 84% 52%;        /* cyan-500 #06b6d4 */
-  --nav-theme-light: 342 88% 60%;  /* cyan-400 #22d3ee */
-  --nav-theme-lighter: 342 88% 66%;
+  --nav-theme: 190 90% 48%;        /* 霓虹青蓝，科幻霓虹感 */
+  --nav-theme-light: 187 90% 56%;
+  --nav-theme-lighter: 187 90% 64%;
 
-  /* 语义色 */
-  --bg: 255 255 255;
-  --bg-alt: 244 248 250;
-  --text: 15 23 42;
-  --text-muted: 71 85 105;
-  --border: 226 232 240;
+  /* 语义色（深空蓝黑底，太空生存游戏始终深色） */
+  --bg: 10 14 28;
+  --bg-alt: 17 24 46;
+  --text: 224 231 244;
+  --text-muted: 139 153 175;
+  --border: 35 46 74;
 
   --maxw: 1080px;
   --radius: 14px;
@@ -18,15 +18,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nav-theme: 342 88% 60%;
-    --nav-theme-light: 342 88% 66%;
-    --nav-theme-lighter: 342 88% 72%;
+    --nav-theme: 190 90% 52%;
+    --nav-theme-light: 187 90% 60%;
+    --nav-theme-lighter: 187 90% 68%;
 
-    --bg: 8 12 20;
-    --bg-alt: 15 23 42;
+    --bg: 8 11 24;
+    --bg-alt: 15 22 42;
     --text: 226 232 240;
     --text-muted: 148 163 184;
-    --border: 30 41 59;
+    --border: 32 43 70;
   }
 }
 
@@ -295,20 +295,27 @@ img {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 44px;
-  align-items: center;
+  align-items: stretch;
+}
+.about-art {
+  display: flex;
 }
 .about-art img {
   width: 100%;
+  height: 100%;
   border-radius: 16px;
   box-shadow: 0 16px 40px hsl(var(--nav-theme) / 0.16);
   border: 1px solid rgb(var(--border));
-  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 @media (max-width: 800px) {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+  .about-art img {
+    height: auto;
+    aspect-ratio: 16 / 10;
   }
 }
 

@@ -22,7 +22,7 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   siteName: 'Breathedge 2 Wiki',
-  siteUrl: 'https://breathedge2-wiki.vercel.app',
+  siteUrl: 'https://breathedge-iota.vercel.app',
   gameName: 'Breathedge 2',
   // GA4 衡量 ID：优先读环境变量 NEXT_PUBLIC_GA_ID，未设置时用下方写死的值
   gaId: process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX',

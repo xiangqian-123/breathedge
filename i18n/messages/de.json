@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "beginner": "Einsteiger-Guide",
+    "walkthrough": "Komplettlösung",
+    "crafting": "Crafting",
+    "survival": "Überleben",
+    "materials": "Materialien",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Fan-Made Community Wiki",
+    "title": "Breathedge 2",
+    "description": "Ironiches Retro-Futurismus-Weltraum-Überlebensspiel: Überlebe, baue und besiege die Breathedge Corporation — mit einem unsterblichen Huhn und jeder Menge Panzerband.",
+    "stats": [
+      "Early Access 31.08.2026",
+      "Weltraum · Survival · Crafting",
+      "Einzelspieler",
+      "13 Sprachen",
+      "Sehr positiv auf Steam",
+      "DIY-Upgrade-System"
+    ],
+    "ctaPrimary": "Einsteiger-Guide starten",
+    "ctaSecondary": "Materialien ansehen",
+    "ctaThird": "Komplettlösung",
+    "videoLabel": "Offizieller Trailer"
+  },
+  "startHere": {
+    "title": "Hier starten",
+    "lead": "Vier Einstiegspunkte zu den wichtigsten Inhalten.",
+    "cards": [
+      {
+        "title": "Beginner Guide Einsteiger-Guide",
+        "desc": "Start-Werkzeugkette, vier Überlebenswerte und die ersten Maschinen.",
+        "slug": "beginner"
+      },
+      {
+        "title": "Walkthrough Komplettlösung",
+        "desc": "Die Hauptquests von Kapitel 1 in 13 Schritten.",
+        "slug": "walkthrough"
+      },
+      {
+        "title": "Crafting",
+        "desc": "Alle Rezepte plus das DIY-Modul-System mit sieben Kategorien.",
+        "slug": "crafting"
+      },
+      {
+        "title": "Materials Materialien",
+        "desc": "Wo man Metall, Plastik, Aluminium, Titan und mehr findet.",
+        "slug": "materials"
+      }
+    ]
+  },
+  "about": {
+    "title": "Was ist Breathedge 2",
+    "paragraphs": [
+      "Breathedge 2 ist ein Weltraum-Survival-Abenteuer von RedRuins Softworks und HypeTrain Digital — der direkte Nachfolger von Breathedge. Die Entwickler nennen es „Subnautica im Weltraum — mit einem Huhn und jeder Menge dummer Witze“.",
+      "Der Mann (the Man), seine Raumanzug-KI und das unsterbliche Huhn kämpfen mit Schrott, Panzerband und fragwürdigen Maschinen gegen die Breathedge Corporation. Early Access startete am 31. August 2026 mit dem ersten Kapitel."
+    ],
+    "facts": [
+      { "label": "Developer", "value": "RedRuins Softworks" },
+      { "label": "Publisher", "value": "HypeTrain Digital" },
+      { "label": "Platform", "value": "PC (Steam / Epic)" },
+      { "label": "Genre", "value": "Survival / Crafting / Weltraum" },
+      { "label": "Release", "value": "31.08.2026 (Early Access)" },
+      { "label": "Price", "value": "$15.99 (-20%)" },
+      { "label": "Mode", "value": "Einzelspieler" },
+      { "label": "Language", "value": "13 Sprachen" }
+    ]
+  },
+  "trailer": {
+    "title": "Offizieller Trailer",
+    "lead": "Der Early-Access-Trailer: der Mann, das Huhn und die Raumanzug-KI bauen, craften und kämpfen gegen die Breathedge Corporation."
+  },
+  "cta": {
+    "title": "Bereit, Breathedge 2 zu meistern?",
+    "description": "Starte mit dem Einsteiger-Guide, lerne Überleben und Crafting und besiege die Breathedge Corporation.",
+    "primary": "Einsteiger-Guide lesen",
+    "secondary": "Auf Steam spielen"
+  },
+  "footer": {
+    "aboutTitle": "Breathedge 2 Wiki",
+    "about": "Ein Fan-Guide zu Breathedge 2: Einsteiger-Guides, Crafting-Rezepte, Survival-Systeme, Komplettlösung und Materialien.",
+    "playGame": "Breathedge 2 spielen",
+    "officialSite": "Offizielle Website",
+    "community": "Community",
+    "communityTool": "Steam Community",
+    "legal": "Rechtliches",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "disclaimer": "Inoffizielle Fan-Seite, nicht mit RedRuins Softworks verbunden. Marken gehören ihren jeweiligen Eigentümern."
+  }
+}

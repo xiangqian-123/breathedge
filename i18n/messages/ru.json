@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "beginner": "Гайд для новичков",
+    "walkthrough": "Прохождение",
+    "crafting": "Крафт",
+    "survival": "Выживание",
+    "materials": "Материалы",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Fan-Made Community Wiki",
+    "title": "Breathedge 2",
+    "description": "Ироничная ретро-футуристичная космическая выживалка: выживай, крафти и сражайся с корпорацией Breathedge вместе с бессмертной курицей и кучей скотча.",
+    "stats": [
+      "Ранний доступ 31.08.2026",
+      "Космос · выживание · крафт",
+      "Одиночная игра",
+      "13 языков",
+      "Очень положительные отзывы в Steam",
+      "Система DIY-модулей"
+    ],
+    "ctaPrimary": "Начать гайд",
+    "ctaSecondary": "Смотреть материалы",
+    "ctaThird": "Прохождение",
+    "videoLabel": "Официальный трейлер"
+  },
+  "startHere": {
+    "title": "С чего начать",
+    "lead": "Четыре главных входа к нужной информации.",
+    "cards": [
+      {
+        "title": "Beginner Guide Гайд для новичков",
+        "desc": "Стартовая цепочка инструментов, четыре показателя выживания и первые машины.",
+        "slug": "beginner"
+      },
+      {
+        "title": "Walkthrough Прохождение",
+        "desc": "Основные задания главы 1 в 13 шагах.",
+        "slug": "walkthrough"
+      },
+      {
+        "title": "Crafting Крафт",
+        "desc": "Все рецепты и семь категорий DIY-модулей.",
+        "slug": "crafting"
+      },
+      {
+        "title": "Materials Материалы",
+        "desc": "Где найти металл, пластик, алюминий, титан и другое.",
+        "slug": "materials"
+      }
+    ]
+  },
+  "about": {
+    "title": "Что такое Breathedge 2",
+    "paragraphs": [
+      "Breathedge 2 — космическая выживалка от RedRuins Softworks и HypeTrain Digital, прямой сиквел Breathedge. Разработчики называют её «Subnautica в космосе — с курицей и кучей глупых шуток».",
+      "Мужчина (the Man), его ИИ в скафандре и бессмертная курица сражаются с корпорацией Breathedge при помощи мусора, скотча и сомнительных машин. Ранний доступ вышел 31 августа 2026 года с первой главой."
+    ],
+    "facts": [
+      { "label": "Developer", "value": "RedRuins Softworks" },
+      { "label": "Publisher", "value": "HypeTrain Digital" },
+      { "label": "Platform", "value": "PC (Steam / Epic)" },
+      { "label": "Genre", "value": "Выживание / Крафт / Космос" },
+      { "label": "Release", "value": "31.08.2026 (ранний доступ)" },
+      { "label": "Price", "value": "$15.99 (-20%)" },
+      { "label": "Mode", "value": "Одиночная игра" },
+      { "label": "Language", "value": "13 языков" }
+    ]
+  },
+  "trailer": {
+    "title": "Официальный трейлер",
+    "lead": "Трейлер раннего доступа: мужчина, курица и ИИ в скафандре строят, крафтят и сражаются с корпорацией Breathedge."
+  },
+  "cta": {
+    "title": "Готовы освоить Breathedge 2?",
+    "description": "Начните с гайда для новичков, изучите выживание и крафт и победите корпорацию Breathedge.",
+    "primary": "Читать гайд",
+    "secondary": "Играть в Steam"
+  },
+  "footer": {
+    "aboutTitle": "Breathedge 2 Wiki",
+    "about": "Фанатский гайд по Breathedge 2: гайды для новичков, рецепты крафта, системы выживания, прохождение и материалы.",
+    "playGame": "Играть в Breathedge 2",
+    "officialSite": "Официальный сайт",
+    "community": "Сообщество",
+    "communityTool": "Steam Community",
+    "legal": "Правовая информация",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfService": "Условия использования",
+    "disclaimer": "Неофициальный фанатский сайт, не связанный с RedRuins Softworks. Товарные знаки принадлежат их владельцам."
+  }
+}

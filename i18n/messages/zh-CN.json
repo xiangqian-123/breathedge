@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "beginner": "新手入门",
+    "walkthrough": "流程攻略",
+    "crafting": "制作升级",
+    "survival": "生存系统",
+    "materials": "材料图鉴",
+    "faq": "常见问题"
+  },
+  "hero": {
+    "eyebrow": "Fan-Made Community Wiki",
+    "title": "Breathedge 2",
+    "description": "复古未来主义太空生存喜剧，带一只不死鸡和一堆烂梗，对抗邪恶的 Breathedge 公司。",
+    "stats": [
+      "抢先体验 2026-08-31",
+      "太空生存 · 制作 · 探索",
+      "纯单人",
+      "支持简体中文",
+      "Steam 非常积极",
+      "DIY 模块升级系统"
+    ],
+    "ctaPrimary": "开始新手攻略",
+    "ctaSecondary": "浏览材料图鉴",
+    "ctaThird": "主线流程攻略",
+    "videoLabel": "官方预告片"
+  },
+  "startHere": {
+    "title": "从这里开始",
+    "lead": "四个核心入口，快速定位你要找的内容。",
+    "cards": [
+      {
+        "title": "Beginner Guide 新手入门",
+        "desc": "开局工具链、四项生存指标、优先修好的机器，一次讲清。",
+        "slug": "beginner"
+      },
+      {
+        "title": "Walkthrough 流程攻略",
+        "desc": "第一章主线 13 步推进顺序，跟着走不迷路。",
+        "slug": "walkthrough"
+      },
+      {
+        "title": "Crafting 制作升级",
+        "desc": "全配方 + DIY 七类模块升级系统，制作不求人。",
+        "slug": "crafting"
+      },
+      {
+        "title": "Materials 材料图鉴",
+        "desc": "金属、塑料、铝、钛等全资源获取位置一览。",
+        "slug": "materials"
+      }
+    ]
+  },
+  "about": {
+    "title": "什么是 Breathedge 2",
+    "paragraphs": [
+      "Breathedge 2 是 RedRuins Softworks 开发、HypeTrain Digital 发行的太空生存冒险游戏，是《呼吸边缘 Breathedge》的正统续作。官方自嘲它是「带一只鸡和一堆烂梗的太空版 Subnautica」。",
+      "主角男人 Man 与太空服 AI、不死鸡 Chicken 一起，用废料、胶带和「有问题的机器」对抗 Breathedge 公司。抢先体验版于 2026-08-31 上线，首发开放第一章。"
+    ],
+    "facts": [
+      { "label": "Developer", "value": "RedRuins Softworks" },
+      { "label": "Publisher", "value": "HypeTrain Digital" },
+      { "label": "Platform", "value": "PC (Steam / Epic)" },
+      { "label": "Genre", "value": "生存 / 制作 / 太空冒险" },
+      { "label": "Release", "value": "2026-08-31（抢先体验）" },
+      { "label": "Price", "value": "$15.99（首发 -20%）" },
+      { "label": "Mode", "value": "单人" },
+      { "label": "Language", "value": "支持简体中文" }
+    ]
+  },
+  "trailer": {
+    "title": "官方预告片",
+    "lead": "抢先体验发布预告片，看男人 Man、不死鸡 Chicken 与太空服 AI 一起在太空中建造、制作、对抗 Breathedge 公司。"
+  },
+  "cta": {
+    "title": "准备好探索 Breathedge 2 了吗？",
+    "description": "从新手攻略开始，掌握生存、制作与流程，去终结 Breathedge 公司。",
+    "primary": "阅读新手攻略",
+    "secondary": "在 Steam 上玩"
+  },
+  "footer": {
+    "aboutTitle": "Breathedge 2 Wiki",
+    "about": "Breathedge 2 的粉丝攻略站：新手入门、制作配方、生存系统、流程攻略与材料图鉴。",
+    "playGame": "玩 Breathedge 2",
+    "officialSite": "官方网站",
+    "community": "社区",
+    "communityTool": "Steam 社区",
+    "legal": "法律",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "disclaimer": "非官方粉丝站，与 RedRuins Softworks 无关联。游戏相关商标归其各自所有者所有。"
+  }
+}

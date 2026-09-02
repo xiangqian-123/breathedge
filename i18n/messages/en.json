@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "beginner": "Beginner Guide",
+    "walkthrough": "Walkthrough",
+    "crafting": "Crafting",
+    "survival": "Survival",
+    "materials": "Materials",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Fan-Made Community Wiki",
+    "title": "Breathedge 2",
+    "description": "The ironic retro-futuristic space survival game — survive, craft, and take down the Breathedge Corporation with an immortal chicken and a lot of duct tape.",
+    "stats": [
+      "Early Access Aug 31, 2026",
+      "Space survival · crafting · exploration",
+      "Single-player",
+      "13 languages",
+      "Very Positive on Steam",
+      "DIY upgrade system"
+    ],
+    "ctaPrimary": "Start Beginner Guide",
+    "ctaSecondary": "Browse Materials",
+    "ctaThird": "Main Walkthrough",
+    "videoLabel": "Official Trailer"
+  },
+  "startHere": {
+    "title": "Start Here",
+    "lead": "Four core entry points to jump straight to what you need.",
+    "cards": [
+      {
+        "title": "Beginner Guide",
+        "desc": "Starting tool chain, four survival stats, and the machines to fix first.",
+        "slug": "beginner"
+      },
+      {
+        "title": "Walkthrough",
+        "desc": "Chapter 1 main quests in a clear 13-step order.",
+        "slug": "walkthrough"
+      },
+      {
+        "title": "Crafting",
+        "desc": "All recipes plus the seven-category DIY upgrade system.",
+        "slug": "crafting"
+      },
+      {
+        "title": "Materials",
+        "desc": "Where to find metal, plastic, aluminum, titanium, and more.",
+        "slug": "materials"
+      }
+    ]
+  },
+  "about": {
+    "title": "What is Breathedge 2",
+    "paragraphs": [
+      "Breathedge 2 is a space survival adventure by RedRuins Softworks and HypeTrain Digital, the direct sequel to Breathedge. The developers call it \"Subnautica in space — with a chicken and a bunch of stupid jokes.\"",
+      "The Man, his spacesuit AI, and the immortal Chicken fight the Breathedge Corporation with scrap, duct tape, and questionable machines. Early Access launched Aug 31, 2026 with the first story chapter."
+    ],
+    "facts": [
+      { "label": "Developer", "value": "RedRuins Softworks" },
+      { "label": "Publisher", "value": "HypeTrain Digital" },
+      { "label": "Platform", "value": "PC (Steam / Epic)" },
+      { "label": "Genre", "value": "Survival / Crafting / Space" },
+      { "label": "Release", "value": "Aug 31, 2026 (Early Access)" },
+      { "label": "Price", "value": "$15.99 (-20% launch)" },
+      { "label": "Mode", "value": "Single-player" },
+      { "label": "Language", "value": "13 languages" }
+    ]
+  },
+  "trailer": {
+    "title": "Official Trailer",
+    "lead": "The Early Access release trailer — the Man, the Chicken, and the spacesuit AI build, craft, and fight the Breathedge Corporation."
+  },
+  "cta": {
+    "title": "Ready to Master Breathedge 2?",
+    "description": "Start with the beginner guide, learn survival and crafting, and take down the Breathedge Corporation.",
+    "primary": "Read the Beginner Guide",
+    "secondary": "Play on Steam"
+  },
+  "footer": {
+    "aboutTitle": "Breathedge 2 Wiki",
+    "about": "A fan guide to Breathedge 2: beginner guides, crafting recipes, survival systems, walkthrough, and materials.",
+    "playGame": "Play Breathedge 2",
+    "officialSite": "Official Site",
+    "community": "Community",
+    "communityTool": "Steam Community",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "disclaimer": "Unofficial fan site, not affiliated with RedRuins Softworks. Game trademarks belong to their respective owners."
+  }
+}

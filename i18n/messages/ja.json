@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "beginner": "ビギナーガイド",
+    "walkthrough": "攻略チャート",
+    "crafting": "クラフト",
+    "survival": "サバイバル",
+    "materials": "素材",
+    "faq": "よくある質問"
+  },
+  "hero": {
+    "eyebrow": "Fan-Made Community Wiki",
+    "title": "Breathedge 2",
+    "description": "レトロフューチャーな宇宙サバイバルコメディ。不死身のニワトリと、くだらないジョークとともに邪悪な Breathedge 社と戦う。",
+    "stats": [
+      "早期アクセス 2026-08-31",
+      "宇宙サバイバル・クラフト・探索",
+      "シングルプレイ",
+      "13言語対応",
+      "Steam 非常に好評",
+      "DIY アップグレード"
+    ],
+    "ctaPrimary": "ビギナーガイドを始める",
+    "ctaSecondary": "素材を見る",
+    "ctaThird": "メイン攻略",
+    "videoLabel": "公式トレーラー"
+  },
+  "startHere": {
+    "title": "ここから始める",
+    "lead": "4つの入り口から、必要な情報へすぐアクセス。",
+    "cards": [
+      {
+        "title": "Beginner Guide ビギナーガイド",
+        "desc": "序盤のツールチェーン、4つの生存ステータス、先に直すべき設備を解説。",
+        "slug": "beginner"
+      },
+      {
+        "title": "Walkthrough 攻略チャート",
+        "desc": "第1章メインクエストを13ステップの順番で。",
+        "slug": "walkthrough"
+      },
+      {
+        "title": "Crafting クラフト",
+        "desc": "全レシピ＋DIY 7種モジュールのアップグレード。",
+        "slug": "crafting"
+      },
+      {
+        "title": "Materials 素材",
+        "desc": "金属・プラスチック・アルミ・チタンなどの入手場所一覧。",
+        "slug": "materials"
+      }
+    ]
+  },
+  "about": {
+    "title": "Breathedge 2 とは",
+    "paragraphs": [
+      "Breathedge 2 は RedRuins Softworks 開発、HypeTrain Digital 発売の宇宙サバイバルアドベンチャーで、『Breathedge（呼吸边缘）』の正統続編。開発元は「ニワトリとくだらないジョーク付きの宇宙版 Subnautica」と自称しています。",
+      "主人公「男 Man」は宇宙服の AI と不死身のニワトリ Chicken とともに、廃材とガムテープで Breathedge 社に立ち向かう。早期アクセス版は 2026-08-31 に配信開始、第1章を収録。"
+    ],
+    "facts": [
+      { "label": "Developer", "value": "RedRuins Softworks" },
+      { "label": "Publisher", "value": "HypeTrain Digital" },
+      { "label": "Platform", "value": "PC (Steam / Epic)" },
+      { "label": "Genre", "value": "サバイバル / クラフト / 宇宙" },
+      { "label": "Release", "value": "2026-08-31（早期アクセス）" },
+      { "label": "Price", "value": "$15.99（-20%）" },
+      { "label": "Mode", "value": "シングルプレイ" },
+      { "label": "Language", "value": "13言語対応" }
+    ]
+  },
+  "trailer": {
+    "title": "公式トレーラー",
+    "lead": "早期アクセス版トレーラー。男 Man、不死身のニワトリ、宇宙服 AI が宇宙で建造・クラフトし、Breathedge 社と戦う。"
+  },
+  "cta": {
+    "title": "Breathedge 2 を攻略する準備はできましたか？",
+    "description": "ビギナーガイドから始めて、サバイバルとクラフトを学び、Breathedge 社を倒そう。",
+    "primary": "ビギナーガイドを読む",
+    "secondary": "Steam でプレイ"
+  },
+  "footer": {
+    "aboutTitle": "Breathedge 2 Wiki",
+    "about": "Breathedge 2 のファン攻略サイト：ビギナーガイド、クラフトレシピ、サバイバル、攻略チャート、素材図鑑。",
+    "playGame": "Breathedge 2 をプレイ",
+    "officialSite": "公式サイト",
+    "community": "コミュニティ",
+    "communityTool": "Steam コミュニティ",
+    "legal": "法的事項",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "disclaimer": "非公式のファンサイトであり、RedRuins Softworks とは関係ありません。ゲーム関連の商標は各所有者に帰属します。"
+  }
+}

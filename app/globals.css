@@ -556,43 +556,27 @@ img {
   text-decoration: none;
 }
 
-/* 视频封面卡片（封面图 + 播放按钮，点击跳转 YouTube） */
-.video-card {
+/* 站内视频播放（iframe 内嵌，16:9 响应式） */
+.video-frame {
+  position: relative;
+  width: 100%;
   max-width: 860px;
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid rgb(var(--border));
   box-shadow: 0 20px 50px rgb(10 14 28 / 0.5);
 }
-.video-card a {
-  position: relative;
+.video-frame iframe {
   display: block;
-  line-height: 0;
-}
-.video-card img {
   width: 100%;
-  display: block;
-  border-radius: 0;
+  height: 100%;
+  border: 0;
 }
-.video-card .play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  background: hsl(var(--nav-theme));
-  color: #04101f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  padding-left: 6px;
-  box-shadow: 0 8px 30px rgb(0 0 0 / 0.45);
-  transition: transform 0.15s ease, background 0.15s ease;
-}
-.video-card a:hover .play {
-  transform: translate(-50%, -50%) scale(1.08);
-  background: hsl(var(--nav-theme-light));
+.prose iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: var(--radius);
 }

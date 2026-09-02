@@ -153,19 +153,14 @@ export default function HomePage({ params }: { params: { locale: string } }) {
         <div className="container">
           <h2>{t(m, "trailer.title", "Official Trailer")}</h2>
           <p className="lead">{t(m, "trailer.lead")}</p>
-          <div className="video-card">
-            <a
-              href="https://www.youtube.com/watch?v=rkO-b-ZHaTY"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://i.ytimg.com/vi/rkO-b-ZHaTY/maxresdefault.jpg"
-                alt="Breathedge 2 官方预告片"
-                loading="lazy"
-              />
-              <span className="play" aria-hidden="true">▶</span>
-            </a>
+          <div className="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/rkO-b-ZHaTY"
+              title="Breathedge 2 官方预告片"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

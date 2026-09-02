@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
   siteUrl: 'https://breathedge-iota.vercel.app',
   gameName: 'Breathedge 2',
   // GA4 衡量 ID：优先读环境变量 NEXT_PUBLIC_GA_ID，未设置时用下方写死的值
-  gaId: process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX',
+  gaId: process.env.NEXT_PUBLIC_GA_ID || 'G-RR4RZ8RLVD',
   defaultTitle: 'Breathedge 2 Wiki — Survival Guide, Crafting, Walkthrough & More',
   defaultDescription:
     'Breathedge 2 Wiki — the fan guide to the retro-futuristic space survival game by RedRuins Softworks: beginner guide, crafting recipes, survival systems, walkthrough, materials, and more.',

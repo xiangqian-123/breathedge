@@ -60,34 +60,34 @@ export default function HomePage({ params }: { params: { locale: string } }) {
 
   return (
     <>
-      {/* Hero */}
+      {/* Hero 全屏沉浸式 */}
       <section className="hero">
-        <div className="container hero-grid">
-          <div className="hero-copy">
-            <span className="eyebrow">{t(m, "hero.eyebrow", "Fan-Made Community Wiki")}</span>
-            <h1>{t(m, "hero.title", "GameName")}</h1>
-            <p className="desc">{t(m, "hero.description")}</p>
-            <div className="hero-stats">
-              {stats.map((s, i) => (
-                <span className="stat" key={i}>
-                  {s}
-                </span>
-              ))}
-            </div>
-            <div className="hero-actions">
-              <Link className="btn btn-primary" href={`/${locale}/guide/beginner`}>
-                {t(m, "hero.ctaPrimary", "Start Beginner Guide")}
-              </Link>
-              <Link className="btn btn-ghost" href={`/${locale}/guide/materials`}>
-                {t(m, "hero.ctaSecondary", "Explore Materials")}
-              </Link>
-              <Link className="btn btn-ghost" href={`/${locale}/guide/walkthrough`}>
-                {t(m, "hero.ctaThird", "Main Walkthrough")}
-              </Link>
-            </div>
+        <div
+          className="hero-bg"
+          style={{ backgroundImage: `url(${HERO_IMG})` }}
+        />
+        <div className="hero-overlay" />
+        <div className="container hero-content">
+          <span className="eyebrow">{t(m, "hero.eyebrow", "Fan-Made Community Wiki")}</span>
+          <h1>{t(m, "hero.title", "GameName")}</h1>
+          <p className="desc">{t(m, "hero.description")}</p>
+          <div className="hero-stats">
+            {stats.map((s, i) => (
+              <span className="stat" key={i}>
+                {s}
+              </span>
+            ))}
           </div>
-          <div className="hero-art">
-            <img src={HERO_IMG} alt="GameName 游戏主视觉" />
+          <div className="hero-actions">
+            <Link className="btn btn-primary" href={`/${locale}/guide/beginner`}>
+              {t(m, "hero.ctaPrimary", "Start Beginner Guide")}
+            </Link>
+            <Link className="btn btn-ghost" href={`/${locale}/guide/materials`}>
+              {t(m, "hero.ctaSecondary", "Explore Materials")}
+            </Link>
+            <Link className="btn btn-ghost" href={`/${locale}/guide/walkthrough`}>
+              {t(m, "hero.ctaThird", "Main Walkthrough")}
+            </Link>
           </div>
         </div>
       </section>
@@ -153,13 +153,19 @@ export default function HomePage({ params }: { params: { locale: string } }) {
         <div className="container">
           <h2>{t(m, "trailer.title", "Official Trailer")}</h2>
           <p className="lead">{t(m, "trailer.lead")}</p>
-          <div className="video">
-            <iframe
-              src="https://www.youtube.com/embed/rkO-b-ZHaTY"
-              title="Breathedge 2 Official Early Access Trailer"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          <div className="video-card">
+            <a
+              href="https://www.youtube.com/watch?v=rkO-b-ZHaTY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/rkO-b-ZHaTY/maxresdefault.jpg"
+                alt="Breathedge 2 官方预告片"
+                loading="lazy"
+              />
+              <span className="play" aria-hidden="true">▶</span>
+            </a>
           </div>
         </div>
       </section>

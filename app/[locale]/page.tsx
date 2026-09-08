@@ -2,6 +2,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLocale } from "@/lib/locales";
 import { getMessages } from "@/lib/i18n";
+import { siteConfig } from "@/lib/site";
+import {
+  absoluteUrl,
+  buildLanguageAlternates,
+  DEFAULT_OG_IMAGE,
+  HOME_META,
+  websiteJsonLd,
+} from "@/lib/seo";
+import type { Metadata } from "next";
 
 type Card = { title: string; desc: string; slug: string; img?: string };
 type Fact = { label: string; value: string };
@@ -46,6 +55,38 @@ function arr(messages: Record<string, unknown>, path: string): string[] {
   return Array.isArray(v) ? (v as string[]) : [];
 }
 
+export function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Metadata {
+  const meta = HOME_META[params.locale] ?? HOME_META.en;
+  const url = `${siteConfig.siteUrl}/${params.locale}`;
+  const ogImage = absoluteUrl(DEFAULT_OG_IMAGE);
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: url,
+      languages: buildLanguageAlternates(""),
+    },
+    openGraph: {
+      type: "website",
+      url,
+      title: meta.title,
+      description: meta.description,
+      siteName: siteConfig.siteName,
+      images: [{ url: ogImage, alt: siteConfig.gameName }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: [ogImage],
+    },
+  };
+}
+
 export default function HomePage({ params }: { params: { locale: string } }) {
   if (!isValidLocale(params.locale)) notFound();
   const m = getMessages(params.locale);
@@ -60,6 +101,10 @@ export default function HomePage({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+      />
       {/* Hero 全屏沉浸式 */}
       <section className="hero">
         <div

@@ -84,8 +84,11 @@ export default function GuidePage({
 
   const fm = post.frontmatter;
   const hasHero = fm.heroImage ? heroImageExists(fm.heroImage) : false;
-  // 成就页的 hero 图是 256×256 图标，不能全宽拉伸，用小图标样式居中显示。
+  // 成就页（256×256 图标）用 96px 小图标页头；配方/材料页不放大图（避免多页共用一张的单调感）。
   const isIconHero = post.slug.startsWith("achievement-");
+  const isDataEntry =
+    post.slug.startsWith("recipe-") || post.slug.startsWith("material-");
+  const showHero = hasHero && !isDataEntry;
 
   const url = `${siteConfig.siteUrl}/${params.locale}/guide/${post.slug}`;
   const jsonLd = articleJsonLd({
@@ -111,7 +114,7 @@ export default function GuidePage({
       <header className="guide-header">
         <span className="eyebrow">{fm.eyebrow}</span>
         <h1>{fm.title}</h1>
-        {hasHero && (
+        {showHero && (
           <img
             className={isIconHero ? "guide-hero guide-hero--icon" : "guide-hero"}
             src={fm.heroImage}

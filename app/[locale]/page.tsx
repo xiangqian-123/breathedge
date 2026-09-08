@@ -22,6 +22,7 @@ const CARD_IMAGES: Record<string, string> = {
   walkthrough: "/images/guides/ss2.jpg",
   crafting: "/images/guides/ss4.jpg",
   materials: "/images/guides/ss5.jpg",
+  achievements: "/images/guides/header.jpg",
 };
 
 // 首页主视觉海报图（用官方截图，避免与内容页重复）。

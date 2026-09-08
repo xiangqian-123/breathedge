@@ -84,6 +84,8 @@ export default function GuidePage({
 
   const fm = post.frontmatter;
   const hasHero = fm.heroImage ? heroImageExists(fm.heroImage) : false;
+  // 成就页的 hero 图是 256×256 图标，不能全宽拉伸，用小图标样式居中显示。
+  const isIconHero = post.slug.startsWith("achievement-");
 
   const url = `${siteConfig.siteUrl}/${params.locale}/guide/${post.slug}`;
   const jsonLd = articleJsonLd({
@@ -111,7 +113,7 @@ export default function GuidePage({
         <h1>{fm.title}</h1>
         {hasHero && (
           <img
-            className="guide-hero"
+            className={isIconHero ? "guide-hero guide-hero--icon" : "guide-hero"}
             src={fm.heroImage}
             alt={fm.heroAlt || fm.title}
           />

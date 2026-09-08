@@ -5,7 +5,8 @@
     "crafting": "制作升级",
     "survival": "生存系统",
     "materials": "材料图鉴",
-    "faq": "常见问题"
+    "faq": "常见问题",
+    "achievements": "成就图鉴"
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
@@ -26,7 +27,7 @@
   },
   "startHere": {
     "title": "从这里开始",
-    "lead": "四个核心入口，快速定位你要找的内容。",
+    "lead": "五个核心入口，快速定位你要找的内容。",
     "cards": [
       {
         "title": "Beginner Guide 新手入门",
@@ -47,6 +48,11 @@
         "title": "Materials 材料图鉴",
         "desc": "金属、塑料、铝、钛等全资源获取位置一览。",
         "slug": "materials"
+      },
+      {
+        "title": "Achievements 成就图鉴",
+        "desc": "39 个成就全解锁方式 + 永久属性奖励，附全球解锁率。",
+        "slug": "achievements"
       }
     ]
   },
@@ -57,14 +63,38 @@
       "主角男人 Man 与太空服 AI、不死鸡 Chicken 一起，用废料、胶带和「有问题的机器」对抗 Breathedge 公司。抢先体验版于 2026-08-31 上线，首发开放第一章。"
     ],
     "facts": [
-      { "label": "Developer", "value": "RedRuins Softworks" },
-      { "label": "Publisher", "value": "HypeTrain Digital" },
-      { "label": "Platform", "value": "PC (Steam / Epic)" },
-      { "label": "Genre", "value": "生存 / 制作 / 太空冒险" },
-      { "label": "Release", "value": "2026-08-31（抢先体验）" },
-      { "label": "Price", "value": "$15.99（首发 -20%）" },
-      { "label": "Mode", "value": "单人" },
-      { "label": "Language", "value": "支持简体中文" }
+      {
+        "label": "Developer",
+        "value": "RedRuins Softworks"
+      },
+      {
+        "label": "Publisher",
+        "value": "HypeTrain Digital"
+      },
+      {
+        "label": "Platform",
+        "value": "PC (Steam / Epic)"
+      },
+      {
+        "label": "Genre",
+        "value": "生存 / 制作 / 太空冒险"
+      },
+      {
+        "label": "Release",
+        "value": "2026-08-31（抢先体验）"
+      },
+      {
+        "label": "Price",
+        "value": "$15.99（首发 -20%）"
+      },
+      {
+        "label": "Mode",
+        "value": "单人"
+      },
+      {
+        "label": "Language",
+        "value": "支持简体中文"
+      }
     ]
   },
   "trailer": {

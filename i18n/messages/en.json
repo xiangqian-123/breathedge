@@ -5,7 +5,8 @@
     "crafting": "Crafting",
     "survival": "Survival",
     "materials": "Materials",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "achievements": "Achievements"
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
@@ -26,7 +27,7 @@
   },
   "startHere": {
     "title": "Start Here",
-    "lead": "Four core entry points to jump straight to what you need.",
+    "lead": "Five core entry points to jump straight to what you need.",
     "cards": [
       {
         "title": "Beginner Guide",
@@ -47,6 +48,11 @@
         "title": "Materials",
         "desc": "Where to find metal, plastic, aluminum, titanium, and more.",
         "slug": "materials"
+      },
+      {
+        "title": "Achievements",
+        "desc": "All 39 achievements with unlock steps and permanent stat bonuses.",
+        "slug": "achievements"
       }
     ]
   },
@@ -57,14 +63,38 @@
       "The Man, his spacesuit AI, and the immortal Chicken fight the Breathedge Corporation with scrap, duct tape, and questionable machines. Early Access launched Aug 31, 2026 with the first story chapter."
     ],
     "facts": [
-      { "label": "Developer", "value": "RedRuins Softworks" },
-      { "label": "Publisher", "value": "HypeTrain Digital" },
-      { "label": "Platform", "value": "PC (Steam / Epic)" },
-      { "label": "Genre", "value": "Survival / Crafting / Space" },
-      { "label": "Release", "value": "Aug 31, 2026 (Early Access)" },
-      { "label": "Price", "value": "$15.99 (-20% launch)" },
-      { "label": "Mode", "value": "Single-player" },
-      { "label": "Language", "value": "13 languages" }
+      {
+        "label": "Developer",
+        "value": "RedRuins Softworks"
+      },
+      {
+        "label": "Publisher",
+        "value": "HypeTrain Digital"
+      },
+      {
+        "label": "Platform",
+        "value": "PC (Steam / Epic)"
+      },
+      {
+        "label": "Genre",
+        "value": "Survival / Crafting / Space"
+      },
+      {
+        "label": "Release",
+        "value": "Aug 31, 2026 (Early Access)"
+      },
+      {
+        "label": "Price",
+        "value": "$15.99 (-20% launch)"
+      },
+      {
+        "label": "Mode",
+        "value": "Single-player"
+      },
+      {
+        "label": "Language",
+        "value": "13 languages"
+      }
     ]
   },
   "trailer": {

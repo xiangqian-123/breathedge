@@ -5,7 +5,8 @@
     "crafting": "クラフト",
     "survival": "サバイバル",
     "materials": "素材",
-    "faq": "よくある質問"
+    "faq": "よくある質問",
+    "achievements": "実績"
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
@@ -26,7 +27,7 @@
   },
   "startHere": {
     "title": "ここから始める",
-    "lead": "4つの入り口から、必要な情報へすぐアクセス。",
+    "lead": "5つの入り口から、必要な情報へすぐアクセス。",
     "cards": [
       {
         "title": "Beginner Guide ビギナーガイド",
@@ -47,6 +48,11 @@
         "title": "Materials 素材",
         "desc": "金属・プラスチック・アルミ・チタンなどの入手場所一覧。",
         "slug": "materials"
+      },
+      {
+        "title": "実績",
+        "desc": "39個の実績と恒久ステータスボーナス。",
+        "slug": "achievements"
       }
     ]
   },
@@ -57,14 +63,38 @@
       "主人公「男 Man」は宇宙服の AI と不死身のニワトリ Chicken とともに、廃材とガムテープで Breathedge 社に立ち向かう。早期アクセス版は 2026-08-31 に配信開始、第1章を収録。"
     ],
     "facts": [
-      { "label": "Developer", "value": "RedRuins Softworks" },
-      { "label": "Publisher", "value": "HypeTrain Digital" },
-      { "label": "Platform", "value": "PC (Steam / Epic)" },
-      { "label": "Genre", "value": "サバイバル / クラフト / 宇宙" },
-      { "label": "Release", "value": "2026-08-31（早期アクセス）" },
-      { "label": "Price", "value": "$15.99（-20%）" },
-      { "label": "Mode", "value": "シングルプレイ" },
-      { "label": "Language", "value": "13言語対応" }
+      {
+        "label": "Developer",
+        "value": "RedRuins Softworks"
+      },
+      {
+        "label": "Publisher",
+        "value": "HypeTrain Digital"
+      },
+      {
+        "label": "Platform",
+        "value": "PC (Steam / Epic)"
+      },
+      {
+        "label": "Genre",
+        "value": "サバイバル / クラフト / 宇宙"
+      },
+      {
+        "label": "Release",
+        "value": "2026-08-31（早期アクセス）"
+      },
+      {
+        "label": "Price",
+        "value": "$15.99（-20%）"
+      },
+      {
+        "label": "Mode",
+        "value": "シングルプレイ"
+      },
+      {
+        "label": "Language",
+        "value": "13言語対応"
+      }
     ]
   },
   "trailer": {

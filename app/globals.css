@@ -420,6 +420,17 @@ img {
   margin: 20px 0 8px;
   width: 100%;
 }
+/* 图标型 hero（成就页的 256×256 图标）：小尺寸居中，不拉伸模糊。 */
+.guide-hero--icon {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+  margin: 20px 0 8px;
+  border-radius: 12px;
+  border: 1px solid rgb(var(--border));
+  background: rgb(var(--bg-alt));
+}
 .guide-source {
   font-size: 0.85rem;
   color: rgb(var(--text-muted));

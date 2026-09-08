@@ -5,7 +5,8 @@
     "crafting": "Крафт",
     "survival": "Выживание",
     "materials": "Материалы",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "achievements": "Достижения"
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
@@ -26,7 +27,7 @@
   },
   "startHere": {
     "title": "С чего начать",
-    "lead": "Четыре главных входа к нужной информации.",
+    "lead": "Пять главных входов к нужной информации.",
     "cards": [
       {
         "title": "Beginner Guide Гайд для новичков",
@@ -47,6 +48,11 @@
         "title": "Materials Материалы",
         "desc": "Где найти металл, пластик, алюминий, титан и другое.",
         "slug": "materials"
+      },
+      {
+        "title": "Достижения",
+        "desc": "39 достижений с постоянными бонусами к статам.",
+        "slug": "achievements"
       }
     ]
   },
@@ -57,14 +63,38 @@
       "Мужчина (the Man), его ИИ в скафандре и бессмертная курица сражаются с корпорацией Breathedge при помощи мусора, скотча и сомнительных машин. Ранний доступ вышел 31 августа 2026 года с первой главой."
     ],
     "facts": [
-      { "label": "Developer", "value": "RedRuins Softworks" },
-      { "label": "Publisher", "value": "HypeTrain Digital" },
-      { "label": "Platform", "value": "PC (Steam / Epic)" },
-      { "label": "Genre", "value": "Выживание / Крафт / Космос" },
-      { "label": "Release", "value": "31.08.2026 (ранний доступ)" },
-      { "label": "Price", "value": "$15.99 (-20%)" },
-      { "label": "Mode", "value": "Одиночная игра" },
-      { "label": "Language", "value": "13 языков" }
+      {
+        "label": "Developer",
+        "value": "RedRuins Softworks"
+      },
+      {
+        "label": "Publisher",
+        "value": "HypeTrain Digital"
+      },
+      {
+        "label": "Platform",
+        "value": "PC (Steam / Epic)"
+      },
+      {
+        "label": "Genre",
+        "value": "Выживание / Крафт / Космос"
+      },
+      {
+        "label": "Release",
+        "value": "31.08.2026 (ранний доступ)"
+      },
+      {
+        "label": "Price",
+        "value": "$15.99 (-20%)"
+      },
+      {
+        "label": "Mode",
+        "value": "Одиночная игра"
+      },
+      {
+        "label": "Language",
+        "value": "13 языков"
+      }
     ]
   },
   "trailer": {

@@ -5,7 +5,8 @@
     "crafting": "Crafting",
     "survival": "Überleben",
     "materials": "Materialien",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "achievements": "Erfolge"
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
@@ -26,7 +27,7 @@
   },
   "startHere": {
     "title": "Hier starten",
-    "lead": "Vier Einstiegspunkte zu den wichtigsten Inhalten.",
+    "lead": "Fünf Einstiegspunkte zu den wichtigsten Inhalten.",
     "cards": [
       {
         "title": "Beginner Guide Einsteiger-Guide",
@@ -47,6 +48,11 @@
         "title": "Materials Materialien",
         "desc": "Wo man Metall, Plastik, Aluminium, Titan und mehr findet.",
         "slug": "materials"
+      },
+      {
+        "title": "Erfolge",
+        "desc": "39 Erfolge mit permanenten Stat-Boni.",
+        "slug": "achievements"
       }
     ]
   },
@@ -57,14 +63,38 @@
       "Der Mann (the Man), seine Raumanzug-KI und das unsterbliche Huhn kämpfen mit Schrott, Panzerband und fragwürdigen Maschinen gegen die Breathedge Corporation. Early Access startete am 31. August 2026 mit dem ersten Kapitel."
     ],
     "facts": [
-      { "label": "Developer", "value": "RedRuins Softworks" },
-      { "label": "Publisher", "value": "HypeTrain Digital" },
-      { "label": "Platform", "value": "PC (Steam / Epic)" },
-      { "label": "Genre", "value": "Survival / Crafting / Weltraum" },
-      { "label": "Release", "value": "31.08.2026 (Early Access)" },
-      { "label": "Price", "value": "$15.99 (-20%)" },
-      { "label": "Mode", "value": "Einzelspieler" },
-      { "label": "Language", "value": "13 Sprachen" }
+      {
+        "label": "Developer",
+        "value": "RedRuins Softworks"
+      },
+      {
+        "label": "Publisher",
+        "value": "HypeTrain Digital"
+      },
+      {
+        "label": "Platform",
+        "value": "PC (Steam / Epic)"
+      },
+      {
+        "label": "Genre",
+        "value": "Survival / Crafting / Weltraum"
+      },
+      {
+        "label": "Release",
+        "value": "31.08.2026 (Early Access)"
+      },
+      {
+        "label": "Price",
+        "value": "$15.99 (-20%)"
+      },
+      {
+        "label": "Mode",
+        "value": "Einzelspieler"
+      },
+      {
+        "label": "Language",
+        "value": "13 Sprachen"
+      }
     ]
   },
   "trailer": {

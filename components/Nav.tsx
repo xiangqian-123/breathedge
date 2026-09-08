@@ -7,8 +7,8 @@ const NAV_LINKS = [
   { slug: "beginner", key: "nav.beginner" },
   { slug: "walkthrough", key: "nav.walkthrough" },
   { slug: "crafting", key: "nav.crafting" },
-  { slug: "survival", key: "nav.survival" },
   { slug: "materials", key: "nav.materials" },
+  { slug: "achievements", key: "nav.achievements" },
   { slug: "faq", key: "nav.faq" },
 ];
 

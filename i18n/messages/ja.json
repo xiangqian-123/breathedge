@@ -11,8 +11,8 @@
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
-    "title": "Breathedge 2",
-    "description": "レトロフューチャーな宇宙サバイバルコメディ。不死身のニワトリと、くだらないジョークとともに邪悪な Breathedge 社と戦う。",
+    "title": "Breathedge 2 Wiki",
+    "description": "攻略、素材の場所、クラフト、サイドクエスト、第1章攻略チャート——Breathedge 2 総合Wiki。",
     "stats": [
       "早期アクセス 2026-08-31",
       "宇宙サバイバル・クラフト・探索",
@@ -149,5 +149,11 @@
         "slug": "material-aluminum"
       }
     ]
+  },
+  "updates": {
+    "title": "最新の更新",
+    "lead": "アーリーアクセス中、内容は随時更新",
+    "version": "Early Access 0.8.x",
+    "note": "攻略はEA版（2026-08-31）に基づき、数値は更新で変わる場合があります。"
   }
 }

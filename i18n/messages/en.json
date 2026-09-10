@@ -11,8 +11,8 @@
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
-    "title": "Breathedge 2",
-    "description": "The ironic retro-futuristic space survival game — survive, craft, and take down the Breathedge Corporation with an immortal chicken and a lot of duct tape.",
+    "title": "Breathedge 2 Wiki",
+    "description": "Guides, material locations, crafting recipes, side quests and the Chapter 1 walkthrough — your Breathedge 2 wiki.",
     "stats": [
       "Early Access Aug 31, 2026",
       "Space survival · crafting · exploration",
@@ -149,5 +149,11 @@
         "slug": "material-aluminum"
       }
     ]
+  },
+  "updates": {
+    "title": "Latest Updates",
+    "lead": "Early Access — content changes with each patch",
+    "version": "Early Access 0.8.x",
+    "note": "Guides are based on the EA build (2026-08-31); values may change with updates."
   }
 }

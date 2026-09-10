@@ -326,6 +326,37 @@ img {
   font-size: 0.85rem;
 }
 
+/* 最近更新横幅 */
+.updates-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid rgb(var(--border));
+  border-radius: var(--radius);
+  background: rgb(var(--bg-alt));
+}
+.updates-version {
+  font-weight: 800;
+  color: hsl(var(--nav-theme));
+  white-space: nowrap;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: hsl(var(--nav-theme) / 0.12);
+}
+.updates-banner p {
+  margin: 0;
+  color: rgb(var(--text-muted));
+  font-size: 0.95rem;
+}
+@media (max-width: 800px) {
+  .updates-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 /* What is GameName 左右布局 */
 .about-grid {
   display: grid;

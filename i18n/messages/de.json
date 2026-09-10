@@ -11,8 +11,8 @@
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
-    "title": "Breathedge 2",
-    "description": "Ironiches Retro-Futurismus-Weltraum-Überlebensspiel: Überlebe, baue und besiege die Breathedge Corporation — mit einem unsterblichen Huhn und jeder Menge Panzerband.",
+    "title": "Breathedge 2 Wiki",
+    "description": "Guides, Materialorte, Crafting-Rezepte, Nebenquests und der Kapitel-1-Walkthrough — dein Breathedge 2 Wiki.",
     "stats": [
       "Early Access 31.08.2026",
       "Weltraum · Survival · Crafting",
@@ -149,5 +149,11 @@
         "slug": "material-aluminum"
       }
     ]
+  },
+  "updates": {
+    "title": "Neueste Updates",
+    "lead": "Early Access — Inhalte ändern sich mit jedem Patch",
+    "version": "Early Access 0.8.x",
+    "note": "Guides basieren auf dem EA-Build (2026-08-31); Werte können sich ändern."
   }
 }

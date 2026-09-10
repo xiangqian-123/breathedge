@@ -11,8 +11,8 @@
   },
   "hero": {
     "eyebrow": "Fan-Made Community Wiki",
-    "title": "Breathedge 2",
-    "description": "复古未来主义太空生存喜剧，带一只不死鸡和一堆烂梗，对抗邪恶的 Breathedge 公司。",
+    "title": "Breathedge 2 Wiki",
+    "description": "攻略、材料位置、制作配方、支线任务与第一章流程——一站式 Breathedge 2 中文维基。",
     "stats": [
       "抢先体验 2026-08-31",
       "太空生存 · 制作 · 探索",
@@ -149,5 +149,11 @@
         "slug": "material-aluminum"
       }
     ]
+  },
+  "updates": {
+    "title": "最近更新",
+    "lead": "抢先体验中，内容随版本持续更新",
+    "version": "Early Access 0.8.x",
+    "note": "本站攻略基于 EA 版（2026-08-31）整理，数值可能随更新调整。"
   }
 }

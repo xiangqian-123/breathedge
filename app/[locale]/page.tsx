@@ -235,6 +235,18 @@ export default function HomePage({ params }: { params: { locale: string } }) {
         </div>
       </section>
 
+      {/* Latest Updates */}
+      <section className="section">
+        <div className="container">
+          <h2>{t(m, "updates.title", "Latest Updates")}</h2>
+          <p className="lead">{t(m, "updates.lead")}</p>
+          <div className="updates-banner">
+            <span className="updates-version">{t(m, "updates.version", "Early Access 0.8.x")}</span>
+            <p>{t(m, "updates.note")}</p>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="cta">
         <div className="container">

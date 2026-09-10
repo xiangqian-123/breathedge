@@ -24,7 +24,8 @@
     "ctaPrimary": "开始新手攻略",
     "ctaSecondary": "浏览材料图鉴",
     "ctaThird": "主线流程攻略",
-    "videoLabel": "官方预告片"
+    "videoLabel": "官方预告片",
+    "searchPlaceholder": "搜索材料、配方、任务、成就…"
   },
   "startHere": {
     "title": "从这里开始",

@@ -24,7 +24,8 @@
     "ctaPrimary": "Einsteiger-Guide starten",
     "ctaSecondary": "Materialien ansehen",
     "ctaThird": "Komplettlösung",
-    "videoLabel": "Offizieller Trailer"
+    "videoLabel": "Offizieller Trailer",
+    "searchPlaceholder": "Materialien, Rezepte, Quests, Erfolge suchen…"
   },
   "startHere": {
     "title": "Hier starten",

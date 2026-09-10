@@ -24,7 +24,8 @@
     "ctaPrimary": "Start Beginner Guide",
     "ctaSecondary": "Browse Materials",
     "ctaThird": "Main Walkthrough",
-    "videoLabel": "Official Trailer"
+    "videoLabel": "Official Trailer",
+    "searchPlaceholder": "Search materials, recipes, quests, achievements…"
   },
   "startHere": {
     "title": "Start Here",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { isValidLocale } from "@/lib/locales";
 import { getMessages } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
+import SearchBox from "@/components/SearchBox";
 import {
   absoluteUrl,
   buildLanguageAlternates,
@@ -120,6 +121,14 @@ export default function HomePage({ params }: { params: { locale: string } }) {
           <span className="eyebrow">{t(m, "hero.eyebrow", "Fan-Made Community Wiki")}</span>
           <h1>{t(m, "hero.title", "GameName")}</h1>
           <p className="desc">{t(m, "hero.description")}</p>
+          <SearchBox
+            locale={locale}
+            placeholder={t(
+              m,
+              "hero.searchPlaceholder",
+              "Search materials, recipes, quests, achievements…"
+            )}
+          />
           <div className="hero-stats">
             {stats.map((s, i) => (
               <span className="stat" key={i}>

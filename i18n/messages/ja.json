@@ -24,7 +24,8 @@
     "ctaPrimary": "ビギナーガイドを始める",
     "ctaSecondary": "素材を見る",
     "ctaThird": "メイン攻略",
-    "videoLabel": "公式トレーラー"
+    "videoLabel": "公式トレーラー",
+    "searchPlaceholder": "素材・レシピ・クエスト・実績を検索…"
   },
   "startHere": {
     "title": "ここから始める",

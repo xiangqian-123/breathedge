@@ -118,5 +118,35 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "disclaimer": "Unofficial fan site, not affiliated with RedRuins Softworks. Game trademarks belong to their respective owners."
+  },
+  "stuck": {
+    "title": "Stuck? Get unstuck fast",
+    "lead": "Popular questions, answered directly",
+    "cards": [
+      {
+        "q": "Where to find Nutriworm?",
+        "slug": "material-nutriworm"
+      },
+      {
+        "q": "Is Breathedge 2 multiplayer?",
+        "slug": "multiplayer-coop"
+      },
+      {
+        "q": "How to repair the Ticket Booth?",
+        "slug": "ticket-booth"
+      },
+      {
+        "q": "How to get Refined Metal?",
+        "slug": "material-refined-metal"
+      },
+      {
+        "q": "Where to find Titanium?",
+        "slug": "material-titanium"
+      },
+      {
+        "q": "Where to find Aluminum?",
+        "slug": "material-aluminum"
+      }
+    ]
   }
 }

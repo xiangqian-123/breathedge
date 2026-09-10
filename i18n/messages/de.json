@@ -118,5 +118,35 @@
     "privacyPolicy": "Datenschutzerklärung",
     "termsOfService": "Nutzungsbedingungen",
     "disclaimer": "Inoffizielle Fan-Seite, nicht mit RedRuins Softworks verbunden. Marken gehören ihren jeweiligen Eigentümern."
+  },
+  "stuck": {
+    "title": "Stecken geblieben?",
+    "lead": "Beliebte Fragen — direkt beantwortet",
+    "cards": [
+      {
+        "q": "Wo finde ich Nutriworm?",
+        "slug": "material-nutriworm"
+      },
+      {
+        "q": "Ist Breathedge 2 Multiplayer?",
+        "slug": "multiplayer-coop"
+      },
+      {
+        "q": "Wie repariere ich den Ticketschalter?",
+        "slug": "ticket-booth"
+      },
+      {
+        "q": "Wie bekomme ich raffiniertes Metall?",
+        "slug": "material-refined-metal"
+      },
+      {
+        "q": "Wo finde ich Titan?",
+        "slug": "material-titanium"
+      },
+      {
+        "q": "Wo finde ich Aluminium?",
+        "slug": "material-aluminum"
+      }
+    ]
   }
 }

@@ -118,5 +118,35 @@
     "privacyPolicy": "Политика конфиденциальности",
     "termsOfService": "Условия использования",
     "disclaimer": "Неофициальный фанатский сайт, не связанный с RedRuins Softworks. Товарные знаки принадлежат их владельцам."
+  },
+  "stuck": {
+    "title": "Застряли?",
+    "lead": "Популярные вопросы — сразу с ответами",
+    "cards": [
+      {
+        "q": "Где найти Nutriworm?",
+        "slug": "material-nutriworm"
+      },
+      {
+        "q": "Есть ли мультиплеер?",
+        "slug": "multiplayer-coop"
+      },
+      {
+        "q": "Как починить билетную кассу?",
+        "slug": "ticket-booth"
+      },
+      {
+        "q": "Как получить очищенный металл?",
+        "slug": "material-refined-metal"
+      },
+      {
+        "q": "Где найти титан?",
+        "slug": "material-titanium"
+      },
+      {
+        "q": "Где найти алюминий?",
+        "slug": "material-aluminum"
+      }
+    ]
   }
 }

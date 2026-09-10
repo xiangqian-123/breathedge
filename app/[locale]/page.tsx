@@ -96,6 +96,9 @@ export default function HomePage({ params }: { params: { locale: string } }) {
   const stats = arr(m, "hero.stats");
   const cards =
     ((m.startHere as { cards?: Card[] } | undefined)?.cards) ?? [];
+  const stuck =
+    ((m.stuck as { cards?: { q: string; slug: string }[] } | undefined)?.cards) ??
+    [];
   const facts =
     ((m.about as { facts?: Fact[] } | undefined)?.facts) ?? [];
   const paragraphs = arr(m, "about.paragraphs");
@@ -167,8 +170,29 @@ export default function HomePage({ params }: { params: { locale: string } }) {
         </div>
       </section>
 
-      {/* What is GameName */}
+      {/* 你卡在哪里 */}
       <section className="section section-alt">
+        <div className="container">
+          <h2>{t(m, "stuck.title", "Stuck?")}</h2>
+          <p className="lead">{t(m, "stuck.lead", "Popular questions, answered directly.")}</p>
+          <div className="cards cards-compact">
+            {stuck.map((s) => (
+              <Link
+                key={s.slug}
+                className="card card-question"
+                href={`/${locale}/guide/${s.slug}`}
+              >
+                <div className="card-body">
+                  <h3>{s.q}</h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What is GameName */}
+      <section className="section">
         <div className="container about-grid">
           <div className="about-art">
             <img src={ABOUT_IMG} alt="GameName 中的角色" />

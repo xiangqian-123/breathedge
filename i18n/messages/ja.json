@@ -118,5 +118,35 @@
     "privacyPolicy": "プライバシーポリシー",
     "termsOfService": "利用規約",
     "disclaimer": "非公式のファンサイトであり、RedRuins Softworks とは関係ありません。ゲーム関連の商標は各所有者に帰属します。"
+  },
+  "stuck": {
+    "title": "詰まった？",
+    "lead": "よくある質問に直接回答",
+    "cards": [
+      {
+        "q": "栄養虫はどこ？",
+        "slug": "material-nutriworm"
+      },
+      {
+        "q": "マルチプレイはある？",
+        "slug": "multiplayer-coop"
+      },
+      {
+        "q": "チケットブースの修理方法？",
+        "slug": "ticket-booth"
+      },
+      {
+        "q": "精錬金属の入手方法？",
+        "slug": "material-refined-metal"
+      },
+      {
+        "q": "チタンはどこ？",
+        "slug": "material-titanium"
+      },
+      {
+        "q": "アルミはどこ？",
+        "slug": "material-aluminum"
+      }
+    ]
   }
 }

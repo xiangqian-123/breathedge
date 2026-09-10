@@ -118,5 +118,35 @@
     "privacyPolicy": "隐私政策",
     "termsOfService": "服务条款",
     "disclaimer": "非官方粉丝站，与 RedRuins Softworks 无关联。游戏相关商标归其各自所有者所有。"
+  },
+  "stuck": {
+    "title": "你卡在哪里？",
+    "lead": "热门问题，直接给答案",
+    "cards": [
+      {
+        "q": "营养虫在哪里？",
+        "slug": "material-nutriworm"
+      },
+      {
+        "q": "Breathedge 2 能联机吗？",
+        "slug": "multiplayer-coop"
+      },
+      {
+        "q": "售票亭怎么修？",
+        "slug": "ticket-booth"
+      },
+      {
+        "q": "精炼金属怎么获得？",
+        "slug": "material-refined-metal"
+      },
+      {
+        "q": "钛在哪里？",
+        "slug": "material-titanium"
+      },
+      {
+        "q": "铝在哪里？",
+        "slug": "material-aluminum"
+      }
+    ]
   }
 }

@@ -295,6 +295,37 @@ img {
   letter-spacing: 0.05em;
 }
 
+/* 你卡在哪里：问题卡片，紧凑无图 */
+.cards-compact {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.card-question {
+  flex-direction: row;
+  align-items: center;
+}
+.card-question .card-body {
+  padding: 16px 18px;
+}
+.card-question h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.card-question h3::before {
+  content: "?";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: hsl(var(--nav-theme) / 0.15);
+  color: hsl(var(--nav-theme));
+  font-weight: 900;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.85rem;
+}
+
 /* What is GameName 左右布局 */
 .about-grid {
   display: grid;

@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site";
 const NAV_LINKS = [
   { slug: "beginner", key: "nav.beginner" },
   { slug: "walkthrough", key: "nav.walkthrough" },
+  { slug: "quests", key: "nav.quests" },
   { slug: "crafting", key: "nav.crafting" },
   { slug: "materials", key: "nav.materials" },
   { slug: "achievements", key: "nav.achievements" },

@@ -84,13 +84,14 @@ export default function GuidePage({
 
   const fm = post.frontmatter;
   const hasHero = fm.heroImage ? heroImageExists(fm.heroImage) : false;
-  // 成就页（256×256 图标）用 96px 小图标页头；配方/材料/任务/地点页不放大图（避免多页共用一张的单调感）。
+  // 成就页（256×256 图标）用 96px 小图标页头；配方/材料/任务/地点/卡关页不放大图。
   const isIconHero = post.slug.startsWith("achievement-");
   const isDataEntry =
     post.slug.startsWith("recipe-") ||
     post.slug.startsWith("material-") ||
     post.slug.startsWith("quest-") ||
-    post.slug.startsWith("location-");
+    post.slug.startsWith("location-") ||
+    post.slug.startsWith("problem-");
   const showHero = hasHero && !isDataEntry;
 
   const url = `${siteConfig.siteUrl}/${params.locale}/guide/${post.slug}`;

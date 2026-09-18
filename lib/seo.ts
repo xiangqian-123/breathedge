@@ -3,7 +3,7 @@
  *
  * 换游戏时只需改 HOME_META 里的标题描述；hreflang 与结构化数据逻辑与语言无关。
  */
-import { locales } from "@/lib/locales";
+import { locales, CONTENT_LOCALES } from "@/lib/locales";
 import { siteConfig } from "@/lib/site";
 
 /** 站内 locale → hreflang 语言代码（Google 支持 zh-CN / zh-TW 地区写法）。 */
@@ -59,10 +59,15 @@ export const DEFAULT_OG_IMAGE = "/images/guides/capsule.jpg";
 /**
  * 生成 hreflang alternates。
  * @param pathWithoutLocale 形如 ""（首页）或 "guide/beginner"
+ * @param contentOnly true 时只列有真实译文内容的语言（攻略页用；首页走全部语言）
  */
-export function buildLanguageAlternates(pathWithoutLocale: string) {
+export function buildLanguageAlternates(
+  pathWithoutLocale: string,
+  contentOnly = false
+) {
   const languages: Record<string, string> = {};
-  for (const loc of locales) {
+  const target = contentOnly ? CONTENT_LOCALES : locales;
+  for (const loc of target) {
     const code = HREFLANG[loc] ?? loc;
     languages[code] = pathWithoutLocale
       ? `${siteConfig.siteUrl}/${loc}/${pathWithoutLocale}`

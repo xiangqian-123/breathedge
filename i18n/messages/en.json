@@ -59,6 +59,7 @@
     ]
   },
   "about": {
+    "artAlt": "Breathedge 2 character art",
     "title": "What is Breathedge 2",
     "paragraphs": [
       "Breathedge 2 is a space survival adventure by RedRuins Softworks and HypeTrain Digital, the direct sequel to Breathedge. The developers call it \"Subnautica in space — with a chicken and a bunch of stupid jokes.\"",
@@ -101,6 +102,7 @@
   },
   "trailer": {
     "title": "Official Trailer",
+    "iframeTitle": "Breathedge 2 Official Trailer",
     "lead": "The Early Access release trailer — the Man, the Chicken, and the spacesuit AI build, craft, and fight the Breathedge Corporation."
   },
   "cta": {

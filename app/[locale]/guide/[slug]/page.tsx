@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { getPost, getSlugs } from "@/lib/posts";
-import { locales } from "@/lib/locales";
+import { locales, CONTENT_LOCALES } from "@/lib/locales";
 import { siteConfig } from "@/lib/site";
 import {
   absoluteUrl,
@@ -42,14 +42,19 @@ export async function generateMetadata({
     ? rawTitle
     : `${rawTitle} | ${siteConfig.siteName}`;
   const ogImage = absoluteUrl(post.frontmatter.heroImage || DEFAULT_OG_IMAGE);
+  // ja/ru/de 攻略页是 en 正文回退壳页：noindex + 移出 hreflang（复盘经验 #6）。
+  const isShell = !(CONTENT_LOCALES as readonly string[]).includes(params.locale);
 
   return {
     title,
     description: post.frontmatter.description,
     alternates: {
       canonical: url,
-      languages: buildLanguageAlternates(`guide/${post.slug}`),
+      languages: isShell
+        ? undefined
+        : buildLanguageAlternates(`guide/${post.slug}`, true),
     },
+    robots: isShell ? { index: false, follow: true } : undefined,
     openGraph: {
       type: "article",
       url,

@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isValidLocale } from "@/lib/locales";
+
+// 法律页不进索引（自查清单 P1.5）。
+export function generateMetadata(): Metadata {
+  return { robots: { index: false, follow: true } };
+}
 
 export default function TermsPage({ params }: { params: { locale: string } }) {
   if (!isValidLocale(params.locale)) notFound();

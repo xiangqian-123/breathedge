@@ -51,7 +51,7 @@ export default function SearchBox({
           onChange={(e) => setQ(e.target.value)}
           onFocus={() => setFocus(true)}
           onBlur={() => setTimeout(() => setFocus(false), 150)}
-          aria-label="搜索"
+          aria-label={placeholder}
         />
       </div>
       {focus && results.length > 0 && (

@@ -59,6 +59,7 @@
     ]
   },
   "about": {
+    "artAlt": "Breathedge 2 中的角色",
     "title": "什么是 Breathedge 2",
     "paragraphs": [
       "Breathedge 2 是 RedRuins Softworks 开发、HypeTrain Digital 发行的太空生存冒险游戏，是《呼吸边缘 Breathedge》的正统续作。官方自嘲它是「带一只鸡和一堆烂梗的太空版 Subnautica」。",
@@ -101,6 +102,7 @@
   },
   "trailer": {
     "title": "官方预告片",
+    "iframeTitle": "Breathedge 2 官方预告片",
     "lead": "抢先体验发布预告片，看男人 Man、不死鸡 Chicken 与太空服 AI 一起在太空中建造、制作、对抗 Breathedge 公司。"
   },
   "cta": {

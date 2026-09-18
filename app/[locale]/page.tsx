@@ -204,7 +204,7 @@ export default function HomePage({ params }: { params: { locale: string } }) {
       <section className="section">
         <div className="container about-grid">
           <div className="about-art">
-            <img src={ABOUT_IMG} alt="GameName 中的角色" />
+            <img src={ABOUT_IMG} alt={t(m, "about.artAlt", "Breathedge 2 character art")} />
           </div>
           <div className="about-copy">
             <h2>{t(m, "about.title", "What is GameName")}</h2>
@@ -235,7 +235,7 @@ export default function HomePage({ params }: { params: { locale: string } }) {
           <div className="video-frame">
             <iframe
               src="https://www.youtube-nocookie.com/embed/rkO-b-ZHaTY"
-              title="Breathedge 2 官方预告片"
+              title={t(m, "trailer.iframeTitle", "Breathedge 2 Official Trailer")}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               loading="lazy"

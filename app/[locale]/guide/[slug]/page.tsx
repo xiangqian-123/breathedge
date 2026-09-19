@@ -107,11 +107,9 @@ export default function GuidePage({
     locale: params.locale,
     image: fm.heroImage || DEFAULT_OG_IMAGE,
   });
-  // FAQ 页额外输出 FAQPage 结构化数据，有机会在 SERP 里直接展开问答。
-  const faqLd =
-    post.slug === "faq"
-      ? faqJsonLdFromMdx(post.content, url, params.locale)
-      : null;
+  // 任何含「## FAQ」问答区块的攻略页都输出 FAQPage 结构化数据，
+  // 有机会在 SERP 里直接展开问答（CTR 弱点的针对性动作）。无问答时返回 null。
+  const faqLd = faqJsonLdFromMdx(post.content, url, params.locale);
   const allJsonLd = faqLd ? [...jsonLd, faqLd] : jsonLd;
 
   return (

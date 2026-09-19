@@ -161,11 +161,13 @@ export function articleJsonLd(opts: {
 
 /**
  * 从 FAQ 的 MDX 正文里抽取 ### 问题 + 答案，生成 FAQPage 结构化数据。
- * 只取以「数字. 」开头的 h3 作为问题（faq.mdx 的书写规范）。
+ * 只在「## FAQ」h2 区块内取以「数字. 」开头的 h3 作为问题（faq.mdx 的书写规范，
+ * 其他攻略页在 FAQ 区块内沿用同一规范即可获得 FAQPage 富结果）。
  */
 export function faqJsonLdFromMdx(content: string, url: string, locale: string) {
   const lines = content.split("\n");
   const items: { q: string; a: string }[] = [];
+  let inFaq = false;
   let curQ: string | null = null;
   let buf: string[] = [];
 
@@ -184,13 +186,18 @@ export function faqJsonLdFromMdx(content: string, url: string, locale: string) {
 
   for (const raw of lines) {
     const line = raw.trim();
-    if (/^###\s+/.test(line)) {
+    if (/^##\s+/.test(line)) {
       flush();
-      curQ = line
-        .replace(/^###\s+/, "")
-        .replace(/^\d+[.、]\s*/, "")
-        .replace(/[*_`]/g, "")
-        .trim();
+      inFaq = /^##\s+FAQ\b/i.test(line);
+    } else if (/^###\s+/.test(line)) {
+      flush();
+      if (inFaq) {
+        curQ = line
+          .replace(/^###\s+/, "")
+          .replace(/^\d+[.、]\s*/, "")
+          .replace(/[*_`]/g, "")
+          .trim();
+      }
     } else if (curQ) {
       if (/^#{1,6}\s+/.test(line)) {
         flush();

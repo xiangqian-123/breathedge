@@ -8,6 +8,7 @@ import { HREFLANG } from "@/lib/seo";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { PopunderAd } from "@/components/Ads";
 
 // 根布局下沉到 [locale]：<html lang> 按路由语言在 SSR 阶段直接输出，
 // 不再用浏览器 JS 事后修正（爬虫只读 SSR HTML）。
@@ -65,6 +66,7 @@ export default function LocaleLayout({
         <GoogleAnalytics gaId={siteConfig.gaId} />
         <Nav locale={params.locale} messages={messages} />
         <main>{children}</main>
+        <PopunderAd />
         <Footer
           locale={params.locale}
           messages={messages}

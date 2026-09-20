@@ -551,6 +551,14 @@ img {
   color: rgb(var(--text-muted));
   margin-top: 6px;
 }
+/* 文章底部广告位：728×90 横幅居中，移动端裁掉溢出部分，不撑横向滚动条。 */
+.ad-slot {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 32px 0 8px;
+}
 
 /* MDX 正文排版 */
 .prose h2 {

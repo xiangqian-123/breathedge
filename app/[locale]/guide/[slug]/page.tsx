@@ -14,6 +14,7 @@ import {
   DEFAULT_OG_IMAGE,
 } from "@/lib/seo";
 import type { Metadata } from "next";
+import { ArticleBannerAd } from "@/components/Ads";
 
 export function generateStaticParams() {
   const slugs = getSlugs();
@@ -139,6 +140,7 @@ export default function GuidePage({
           }}
         />
       </div>
+      <ArticleBannerAd />
     </article>
   );
 }

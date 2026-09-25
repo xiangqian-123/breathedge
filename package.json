@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "node scripts/generate-site.cjs input/zh-CN zh-CN"
+    "deploy": "node scripts/generate-site.cjs"
   },
   "dependencies": {
     "next": "14.2.5",

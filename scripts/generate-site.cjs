@@ -1,23 +1,19 @@
 /*
- * generate-site.cjs —— 把 AI 生成好的 MDX 批量部署到 content/guides，并生成繁体版。
+ * generate-site.cjs —— 从 content/guides/zh-CN 自动生成 content/guides/zh-TW（繁简转换）。
  *
  * 用法：
- *   node scripts/generate-site.cjs <输入目录> <locale>
+ *   npm run deploy   （= node scripts/generate-site.cjs）
  *
- * 示例：
- *   node scripts/generate-site.cjs input/zh-CN zh-CN
- *
- * 输入目录结构（AI 用 templates/prompts/04-页面生成.md 生成，按 slug 命名）：
- *   input/zh-CN/
- *     beginner.mdx
- *     water.mdx
- *     ...
+ * 单一事实源（2026-09-25 根治双源漂移后）：
+ *   - zh-CN 唯一中文源：直接编辑 content/guides/zh-CN/<slug>.mdx
+ *   - zh-TW 确定性生成：opencc 简→繁（twp）+ 路径替换，本脚本从 zh-CN 生成
+ *   - en 独立源：直接编辑 content/guides/en/<slug>.mdx，本脚本不碰 en
+ *   - input/ 已废弃，不再参与部署流程
  *
  * 脚本会：
- *   1. 校验每个 .mdx 的 frontmatter 必填字段（缺字段直接报错并列出）
- *   2. 写入 content/guides/<locale>/<slug>.mdx
- *   3. 若 locale 是 zh-CN，用 opencc 自动生成 content/guides/zh-TW/<slug>.mdx
- *   4. 打印部署报告（成功 / 缺失字段 / 跳过的文件）
+ *   1. 校验 content/guides/zh-CN 每个 .mdx 的 frontmatter 必填字段（缺字段报错）
+ *   2. 用 opencc 简→繁转换 + 内部链接路径替换，写入 content/guides/zh-TW/<slug>.mdx
+ *   3. 打印生成报告（成功 / 缺失字段）
  */
 const fs = require('fs');
 const path = require('path');
@@ -53,63 +49,48 @@ function validate(file, fm) {
 }
 
 async function main() {
-  const [, , inputDir, locale] = process.argv;
-  if (!inputDir || !locale) {
-    console.error('用法: node scripts/generate-site.cjs <输入目录> <locale>');
+  const zhCNDir = path.resolve('content/guides/zh-CN');
+  const twDir = path.resolve('content/guides/zh-TW');
+
+  if (!fs.existsSync(zhCNDir)) {
+    console.error(`zh-CN 目录不存在: ${zhCNDir}`);
     process.exit(1);
   }
 
-  const srcDir = path.resolve(inputDir);
-  const dstDir = path.resolve('content/guides', locale);
-
-  if (!fs.existsSync(srcDir)) {
-    console.error(`输入目录不存在: ${srcDir}`);
-    process.exit(1);
-  }
-
-  const files = fs.readdirSync(srcDir).filter((f) => f.endsWith('.mdx'));
+  const files = fs.readdirSync(zhCNDir).filter((f) => f.endsWith('.mdx'));
   if (files.length === 0) {
-    console.error(`输入目录里没有 .mdx 文件: ${srcDir}`);
+    console.error(`zh-CN 目录里没有 .mdx 文件: ${zhCNDir}`);
     process.exit(1);
   }
-
-  fs.mkdirSync(dstDir, {recursive: true});
 
   const errors = [];
-  let ok = 0;
   const deployed = [];
 
+  // 先全部校验，缺字段的文件不参与转换。
   for (const f of files) {
-    const raw = fs.readFileSync(path.join(srcDir, f), 'utf8');
+    const raw = fs.readFileSync(path.join(zhCNDir, f), 'utf8');
     const fm = parseFrontmatter(raw);
     const fileErrors = validate(f, fm);
     if (fileErrors.length > 0) {
       errors.push(...fileErrors);
       continue;
     }
-    fs.writeFileSync(path.join(dstDir, f), raw, 'utf8');
     deployed.push(f);
-    ok += 1;
   }
 
-  console.log(`\n部署完成: ${ok}/${files.length} 个文件写入 content/guides/${locale}/`);
-  if (deployed.length) {
-    console.log('已部署:', deployed.join(', '));
-  }
+  console.log(`\n校验通过: ${deployed.length}/${files.length} 个文件`);
   if (errors.length) {
-    console.log('\n⚠️ 校验失败（以下文件未部署，请补齐字段后重跑）:');
+    console.log('\n⚠️ 校验失败（以下文件未生成繁体，请补齐字段后重跑）:');
     for (const e of errors) console.log('  -', e);
   }
 
-  // 简中 → 繁体自动转换
-  if (locale === 'zh-CN' && ok > 0) {
+  if (deployed.length > 0) {
     const OpenCC = require('opencc-js');
-    const convert = OpenCC.Converter({from: 'cn', to: 'twp'});
-    const twDir = path.resolve('content/guides/zh-TW');
-    fs.mkdirSync(twDir, {recursive: true});
+    const convert = OpenCC.Converter({ from: 'cn', to: 'twp' });
+    fs.mkdirSync(twDir, { recursive: true });
     let tw = 0;
     for (const f of deployed) {
-      const raw = fs.readFileSync(path.join(dstDir, f), 'utf8');
+      const raw = fs.readFileSync(path.join(zhCNDir, f), 'utf8');
       let out = raw.replace(/\/zh-CN\/guide(\/|(?=[)\s]|$))/g, '/zh-TW/guide$1');
       out = convert(out);
       fs.writeFileSync(path.join(twDir, f), out, 'utf8');

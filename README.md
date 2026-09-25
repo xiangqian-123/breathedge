@@ -22,7 +22,7 @@
 
 ### 第 3 步：装依赖 + 放内容 + 部署
 1. `npm install`（装依赖）
-2. 把生成好的 MDX 放进 `content/guides/zh-CN/`（或用 `scripts/generate-site.cjs` 生成）
+2. 把生成好的 MDX 放进 `content/guides/zh-CN/`（英文放 `content/guides/en/`），然后 `npm run deploy` 自动生成繁体 `zh-TW`
 3. 图片放 `public/images/guides/`
 4. `npm run build` 本地验证
 5. 推 GitHub → Vercel 上线
@@ -36,7 +36,7 @@
 
 ## 多语言说明
 
-- zh-CN 默认，zh-TW 由脚本自动繁简转换生成
+- zh-CN 默认（中文唯一源，直接编辑 `content/guides/zh-CN/`）；zh-TW 由 `npm run deploy` 从 zh-CN 自动繁简转换生成，**不要手改 zh-TW**（会被覆盖）
 - en 是兜底语言（小语种回退 en）
 - ja/ru/de 已清空为 `{}`，需要时再填翻译（不填就回退 en，不影响运行）
 

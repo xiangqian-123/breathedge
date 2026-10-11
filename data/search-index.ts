@@ -127,5 +127,5 @@ export const SEARCH_INDEX: SearchEntry[] = [
   { slug: "system-requirements", en: "Breathedge 2 System Requirements — Minimum & Recommended Specs" },
   { slug: "ticket-booth", en: "Breathedge 2 Ticket Booth — Location, Knob Puzzle & Repair Materials" },
   { slug: "trailer", en: "Breathedge 2 Trailer — Official Early Access Release Trailer" },
-  { slug: "walkthrough", en: "Breathedge 2 Walkthrough — Ch.1: 13 Main + 16 Side Quests" },
+  { slug: "walkthrough", en: "Breathedge 2 Walkthrough — Ch.1: 15 Main + 16 Side Quests" },
 ];

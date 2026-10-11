@@ -6,8 +6,8 @@ import { locales, CONTENT_LOCALES } from "@/lib/locales";
 import { siteConfig } from "@/lib/site";
 import { buildLanguageAlternates } from "@/lib/seo";
 
-// 内容源目录（zh-CN 为源语言，slugs 以此为准）。
-const CONTENT_DIR = path.join(process.cwd(), "content", "guides", "zh-CN");
+// 内容源目录（en 为源语言，slugs 以此为准）。
+const CONTENT_DIR = path.join(process.cwd(), "content", "guides", "en");
 
 // lastModified 用文件真实 mtime（自查清单 P2：不允许写 now）。
 const mtimeCache = new Map<string, Date>();
@@ -49,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // 攻略页只提交有真实译文内容的语言（ja/ru/de 壳页移出 sitemap，复盘经验 #6）。
+  // 攻略页只提交有真实译文内容的语言（当前仅 en，无壳页）。
   for (const locale of CONTENT_LOCALES) {
     for (const slug of slugs) {
       entries.push({

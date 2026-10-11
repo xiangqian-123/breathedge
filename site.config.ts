@@ -30,5 +30,5 @@ export const siteConfig: SiteConfig = {
   defaultDescription:
     'Breathedge 2 Wiki — the fan guide to the retro-futuristic space survival game by RedRuins Softworks: beginner guide, crafting recipes, survival systems, walkthrough, materials, and more.',
   // OpenGraph 备选语言（主语言 en_US 之外的站点语言；en 不再出现在 alternateLocale 里）。
-  ogLocales: ['zh-CN', 'zh-TW', 'ja', 'ru', 'de'],
+  ogLocales: [],
 };

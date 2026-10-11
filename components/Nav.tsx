@@ -14,12 +14,7 @@ const NAV_LINKS = [
 ];
 
 const LANG_LABELS: Record<string, string> = {
-  "zh-CN": "中文",
-  "zh-TW": "繁體",
   en: "EN",
-  ja: "日本語",
-  ru: "РУ",
-  de: "DE",
 };
 
 function t(messages: Record<string, unknown>, key: string, fallback: string) {
@@ -52,16 +47,18 @@ export default function Nav({
               {t(messages, l.key, l.slug)}
             </Link>
           ))}
-          <details className="lang">
-            <summary>{LANG_LABELS[locale] ?? locale}</summary>
-            <div className="lang-list">
-              {locales.map((l) => (
-                <Link key={l} href={`/${l}`}>
-                  {LANG_LABELS[l]}
-                </Link>
-              ))}
-            </div>
-          </details>
+          {locales.length > 1 && (
+            <details className="lang">
+              <summary>{LANG_LABELS[locale] ?? locale}</summary>
+              <div className="lang-list">
+                {locales.map((l) => (
+                  <Link key={l} href={`/${l}`}>
+                    {LANG_LABELS[l]}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          )}
         </nav>
       </div>
     </header>

@@ -24,17 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: siteConfig.siteName,
     locale: "en_US",
-    alternateLocale: siteConfig.ogLocales.map((l) =>
-      l === "zh-CN"
-        ? "zh_CN"
-        : l === "zh-TW"
-          ? "zh_TW"
-          : l === "ja"
-            ? "ja_JP"
-            : l === "ru"
-              ? "ru_RU"
-              : "de_DE"
-    ),
+    alternateLocale: [],
   },
   twitter: { card: "summary_large_image" },
   robots: {
@@ -57,7 +47,7 @@ export default function LocaleLayout({
 }) {
   if (!isValidLocale(params.locale)) notFound();
   const messages = getMessages(params.locale);
-  // zh-CN → zh-Hans、zh-TW → zh-Hant，其余原样（en/ja/ru/de）。
+  // 仅英文，原样输出。
   const lang = HREFLANG[params.locale] ?? params.locale;
 
   return (

@@ -21,7 +21,6 @@ export default function SearchBox({
     return SEARCH_INDEX.filter((e) => {
       return (
         e.slug.toLowerCase().includes(query) ||
-        e.zh.toLowerCase().includes(query) ||
         e.en.toLowerCase().includes(query)
       );
     }).slice(0, 8);
@@ -64,9 +63,7 @@ export default function SearchBox({
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => setQ("")}
             >
-              <span className="searchbox-title">
-                {locale.startsWith("zh") ? r.zh : r.en}
-              </span>
+              <span className="searchbox-title">{r.en}</span>
             </Link>
           ))}
         </div>

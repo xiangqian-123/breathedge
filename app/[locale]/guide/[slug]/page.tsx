@@ -43,7 +43,7 @@ export async function generateMetadata({
     ? rawTitle
     : `${rawTitle} | ${siteConfig.siteName}`;
   const ogImage = absoluteUrl(post.frontmatter.heroImage || DEFAULT_OG_IMAGE);
-  // ja/ru/de 攻略页是 en 正文回退壳页：noindex + 移出 hreflang（复盘经验 #6）。
+  // 仅英文：CONTENT_LOCALES 只含 en，isShell 恒为 false，所有页面可索引 + 输出 hreflang。
   const isShell = !(CONTENT_LOCALES as readonly string[]).includes(params.locale);
 
   return {
